@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Banq | AI Kunskapsbas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              brand: {
+                orange: 'oklch(0.6397 0.1720 36.4421)',
+                bg: 'oklch(0.9383 0.0042 236.4993)',
+                dark: 'oklch(0.2598 0.0306 262.6666)',
+                muted: 'oklch(0.9846 0.0017 247.8389)',
+                border: 'oklch(0.9022 0.0052 247.8822)',
+                text: {
+                  DEFAULT: 'oklch(0.2598 0.0306 262.6666)',
+                  muted: 'oklch(0.5510 0.0234 264.3637)',
+                },
+                accent: 'oklch(0.9119 0.0222 243.8174)',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: oklch(0.9022 0.0052 247.8822);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: oklch(0.5510 0.0234 264.3637);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "motion/react": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "clsx": "https://aistudiocdn.com/clsx@^2.1.1",
+    "tailwind-merge": "https://aistudiocdn.com/tailwind-merge@^2.3.0",
+    "cobe": "https://esm.sh/cobe",
+    "@tabler/icons-react": "https://esm.sh/@tabler/icons-react",
+    "motion/": "https://aistudiocdn.com/motion@^12.23.24/"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-bg text-brand-text overflow-x-hidden">
+    <div id="root"></div>
+  </body>
+</html>
